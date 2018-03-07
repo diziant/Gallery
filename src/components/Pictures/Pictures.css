@@ -1,0 +1,121 @@
+﻿.container{
+    width: 800px;
+    height: 550px;
+
+    margin: 50px auto 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+
+    -webkit-box-shadow: 0px 0px 10px 1px #ccc;
+    box-shadow: 0px 0px 10px 1px #ccc;
+    overflow: overlay;
+}
+
+.todo-title{
+    text-align: center;
+    margin: 0;
+}
+
+.todo-form{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.todo-form__input{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px #ccc;
+}
+
+.todo-form__button{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+
+    margin-left: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px #ccc;
+
+    -webkit-transition: transform 0.1s ease-out;
+    -moz-transition: transform 0.1s ease-out;
+    -o-transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-out;
+}
+
+.todo-form__button:hover{
+    transform: scale(1.03);
+}
+
+.todo-form__button[disabled]:hover{
+    cursor: no-drop;
+    transform: none;
+}
+
+.todo-list{
+    width: 280px;
+    padding: 0;
+    margin-left: 60px;
+
+    list-style: none;
+}
+
+.todo-list__item{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    padding: 10px 25px 10px 10px;
+
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    background-color: #fff;
+    cursor: pointer;
+
+    -webkit-transition: transform 0.1s ease-out;
+    -moz-transition: transform 0.1s ease-out;
+    -o-transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-out;
+}
+
+.todo-list__item:after{
+    display: none;
+    content:"×";
+    font-size: 30px;
+    color: #ff7878;
+}
+
+.todo-list__item:hover{
+    transform: scale(1.03);
+}
+
+.todo-list__item:hover:after{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.todo-list__item:last-child{
+    margin-bottom: 0;
+}
+
+.gallery{
+
+}
+
+.gallery__item{
+    position: relative;
+    width: 20%;
+    height: 150px;
+    display: inline-block;
+}
+
+.gallery__item img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%)
+}
